@@ -1,0 +1,17 @@
+/* *{
+    outline: 3px solid limegreen !important;
+    background: rgba(0, 151, 0, 0.1) !important;
+} */
+
+body {
+    background-color: lightblue;
+    text-align: center;
+  }
+
+  footer {
+    display: flexbox;
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
