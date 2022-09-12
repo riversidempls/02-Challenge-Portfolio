@@ -3,6 +3,13 @@
     background: rgba(0, 151, 0, 0.1) !important;
 } */
 
+/**
+ * Enable smooth scrolling on the whole document
+ */
+ html {
+	scroll-behavior: smooth;
+}
+
 body {
     background-color: lightblue;
     text-align: center;
@@ -29,6 +36,7 @@ a:active { text-decoration: none; }
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    position: sticky;
 }
 
 .header h1 {
@@ -68,7 +76,12 @@ a:active { text-decoration: none; }
 }
 
 section {
-  height: 150
+  width: 700;
+  height: 500px;
+  /*overflow-y: scroll;*/
+  border: 1px solid black;
+  /*font-size: 12px; */
+  scroll-behavior: smooth;    /* <----- THE SECRET ---- */
 }
 
 .footer {
