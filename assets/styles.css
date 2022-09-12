@@ -3,6 +3,12 @@
     background: rgba(0, 151, 0, 0.1) !important;
 } */
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 /**
  * Enable smooth scrolling on the whole document
  */
@@ -10,9 +16,35 @@
 	scroll-behavior: smooth;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 body {
     background-color: lightblue;
     text-align: center;
+}
+
+img {
+  border:#2a607c;
+  margin: 15px;
+}
+
+h3 {
+  color:black
+}
+
+.aside {
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: left;
+  width: 15%;
+  height: 700px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: whitesmoke;
+  background-color: #2589bd;
 }
  
 a:link { text-decoration: none;
@@ -43,6 +75,7 @@ a:active { text-decoration: none; }
   display: inline-inside;
   font-size: 32px;
   margin-left: 55px;
+  margin-top: 55px;
   float: left;
 }
 
@@ -76,27 +109,30 @@ a:active { text-decoration: none; }
 }
 
 section {
-  width: 700;
-  height: 500px;
-  /*overflow-y: scroll;*/
-  border: 1px solid black;
-  /*font-size: 12px; */
-  scroll-behavior: smooth;    /* <----- THE SECRET ---- */
+  width: 500;
+  border-style:none;
+  /*height: 1200px; */
+  text-align:justify;
+  padding: 25px;
+  margin: 25px;
+  border:groove 2px gray;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 25px;
 }
 
 .footer {
-    display: flexbox;
-    text-align: left;
+    display: flex;
+    text-align: right;
     background-color: DarkSalmon;
     color: white;
-    height: 150px;
+    height: 55px;
     width: auto;
-    padding: 0;
+    padding: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
-.footer h3 {
-  display: inline-inside;
+.footer h2 {
+  display:inline-flex;
   font-size: 24px;
   float: left;
 }
@@ -110,12 +146,16 @@ section {
 
 .footer nav ul {
   list-style-type: none;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  margin-left: px;
+  float: right;
 
 }
 
 .footer nav li {
-  display: inline-block;
+  display: inline-flex;
   margin-left: 25px;
   color: #ffffff;
+  float: right;
+  text-align: right;
 }
